@@ -1,0 +1,50 @@
+
+/***********************************   ORGANIGRAMME   ***************************************/
+
+#bloc_page {
+  font-size: 20px;
+	font-family: 'Playfair Display''Philosopher', sans-serif;
+}
+
+div {
+ font-size: 20px;
+ text-align: center; 
+}
+
+.Titre {
+  font-size: 50px;
+  text-align: center;
+}
+
+#tabEmploye {
+  width: 1500px;
+  /* display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px; */
+  margin: auto;
+  margin-top: 50px;
+
+  display: flex;  
+	flex-direction: row;   /* row=ligne column=colone - row-reverse=ligne inversé - column-reverse= colone inversé */
+	flex-wrap: wrap; /* flex-wrap: nowrap; */   /* nowrap=pas de retour à la ligne - wrap=retour à la ligne - wrap-reverse=retour à la ligne en sens inverse */
+	justify-content: center;   /* flex-start=alignés au début - flex-end=alignés à la fin - center=alignés au centre - space-between=étiré (espace entre chaque) - space-around=étirés (espace aux extrémités)*/
+	align-items: center;   /* flex-start=alignés au début - flex-end=alignés à la fin - center=alignés au centre - baseline=alignés sur la ligne de base */
+}
+
+.Employe {
+  width: 200px;
+  border: 3px solid #121212;
+  font-size: 50px;
+  margin: 1px 25px 25px 25px;
+  padding: 5px 2px 2px 2px;
+
+  display: flex;  
+	flex-direction: column;   /* row=ligne column=colone - row-reverse=ligne inversé - column-reverse= colone inversé */
+	/* flex-wrap: nowrap; */   /* nowrap=pas de retour à la ligne - wrap=retour à la ligne - wrap-reverse=retour à la ligne en sens inverse */
+	justify-content: center;   /* flex-start=alignés au début - flex-end=alignés à la fin - center=alignés au centre - space-between=étiré (espace entre chaque) - space-around=étirés (espace aux extrémités)*/
+	align-items: center;   /* flex-start=alignés au début - flex-end=alignés à la fin - center=alignés au centre - baseline=alignés sur la ligne de base */
+}
+
+.imageEmployé {
+  width: 190px;
+  height: 190px;
+}

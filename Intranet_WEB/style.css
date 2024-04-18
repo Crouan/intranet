@@ -1,0 +1,331 @@
+:root {
+
+  /** 
+   * Colors  
+   */
+
+  --white: #fff;
+
+  /**  
+    * Gradient colors  
+    */
+  
+  /**  
+    * Typography  
+    */
+
+  /* Font-family */
+  --fontFamily-login: 'Philosopher', sans-serif;
+  --fontFamily-login-2:'Playfair Display', serif;
+
+  /* Font-size */
+  --fontSize-login-1: 50px;
+  --fontSize-login-2: 15px;
+  --fontSize-login-3: 30px;
+
+  /* Font-weight */
+  --weight-regular: 400;
+  --weight-bold: 700;
+
+
+  /* line-height */
+  --lineHeight-1: 1em;
+  --lineHeight-2: 1.2em;
+  --lineHeight-3: 1.5em;
+  --lineHeight-4: 1.6em;
+  --lineHeight-5: 1.85em;
+  --lineHeight-6: 1.4em;
+  
+  /* letter-spacing */
+  --letterSpacing-1: 0.15em;
+  --letterSpacing-2: 0.4em;
+  --letterSpacing-3: 0.2em;
+  --letterSpacing-4: 0.3em;
+  --letterSpacing-5: 3px;
+  
+  /**
+    * Spacing
+    */
+  
+   --section-space: 70px;
+  
+  /**
+    * Shadow
+    */
+  --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+  
+  /**
+   * Border Radius
+    */
+    --radius-10: 10px;
+    --radius-40: 40px;
+    --radius-circle: 50%;
+
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.boximage {
+  width: 37.5%;
+  height: 95%;
+  border-radius: var(--radius-40);
+  overflow: hidden;
+  margin-left: 2.5vh;
+}
+
+.boximage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.overlay_1 {
+  position: absolute;
+  top: 8vh;
+  left: 7vh;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--fontFamily-login);
+  font-size: var(--fontSize-login-2);
+}
+
+.overlay_1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 115%; /* Placer la ligne à droite du texte */
+  transform: translateY(-50%);
+  width: 100px; /* Longueur de la ligne */
+  height: 2px; /* Épaisseur de la ligne */
+  background-color: var(--white); /* Couleur de la ligne */
+}
+
+.overlay_2{
+  position: absolute;
+  bottom: 8vh;
+  left: 7vh;
+  color: var(--white);
+  text-align: left;
+  font-family: var(--fontFamily-login);
+}
+
+.p1{
+  font-size: var(--fontSize-login-1)
+}
+
+.p2{
+  font-size: var(--fontSize-login-2);
+}
+
+.espace{
+  width: 7.5%;
+}
+
+.boxlogin img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.boxlogin {
+  width: 55%;
+  height: 95%;
+  overflow: hidden;
+  margin-right: 2.5vh;
+  display: flex;
+  flex-direction: column; /* Aligner les éléments verticalement */
+  justify-content: flex-start; /* Aligner les éléments en haut */
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Ajouter de l'espace entre le logo et le texte */
+}
+
+.logo img {
+  width: 5vh;
+  height: 5vh;
+}
+
+.logo p {
+  margin-left: 10px;
+  font-size: var(--fontSize-login-3);
+  font-family: var(--fontFamily-login);
+}
+
+.titre_login_google{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.titre_login_google h1{
+  font-size: var(--fontSize-login-1);
+  font-family: var(--fontFamily-login-2);
+  margin-bottom: 1vh;
+  font-weight: normal;
+}
+
+.titre_login_google p{
+  font-size: var(--fontSize-login-2);
+  font-family: var(--fontFamily-login-1);
+  margin-top: 1vh;
+  margin-bottom: 8vh;
+}
+
+.container_saisie_login_google{
+  width: 40vw; /* Ajuster la largeur selon vos besoins */
+  display: flex;
+  flex-direction: column;
+}
+
+.saisie_login_google {
+  display: flex;
+  flex-direction: column;
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  margin-top: 3vh; /* Ajouter un espace au-dessus pour séparer des saisies */
+}
+
+.saisie_login_google input[type="email"],
+.saisie_login_google input[type="password"] {
+  padding: 1.5%; /* Ajuster le rembourrage selon vos besoins */
+  background-color: #EEEFF1; /* Couleur de fond */
+  border: none; /* Supprimer le contour */
+  font-family: var(--fontFamily-login-1); /* Nouvelle typographie */
+  border-radius: var(--radius-10);
+}
+
+#email{
+  margin-bottom: 1vh;
+}
+
+.saisie_login_google label {
+  margin-bottom: 1vh;
+}
+
+.option a {
+  margin-left: 28vw; /* Décaler le paragraphe vers la gauche */
+  color: inherit; /* Permet au lien de prendre la couleur de son parent */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+.boutons_login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bouton_main{
+  width: 100%;
+  margin-bottom: 1vh;
+  font-family: var(--fontFamily-login-1); /* Nouvelle typographie */
+  border-radius: var(--radius-10);
+  margin-top: 5vh;
+  background-color: #121212; /* Couleur de fond */
+  border: none; /* Supprimer le contour */
+  color: #fff;
+}
+
+.bouton_second{
+  width: 100%;
+  margin-bottom: 1vh;
+  font-family: var(--fontFamily-login-1); /* Nouvelle typographie */
+  border-radius: var(--radius-10);
+  background-color: #fff; /* Couleur de fond */
+  border: 2px solid;
+  border-color: #EEEFF1; /* Supprimer le contour */
+  color: black;
+}
+
+.wrapper{
+  position: absolute;
+  z-index: 2;
+  width: 330px;
+  padding: 2rem 1rem;
+  margin: 50px auto;
+  background-color: #EEEFF1;
+  border-radius: var(--radius-40);
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
+}
+
+.modal-container{
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: visibility 0.4s;
+}
+
+.modal-container.active{
+  /* display: block; */ 
+  visibility: visible;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+
+.modal-container.active .overlay{
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal{
+  width: 95%;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-modal{
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: #ff365e;
+  color: #fff;
+}
+
+.modal h1{
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+}
+
+.modal p{
+  line-height: 1.4;
+  margin-bottom: 5px;
+}

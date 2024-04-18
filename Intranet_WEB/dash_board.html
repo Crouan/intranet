@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="style_2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="page">
+        <!-------------------------------- TopBar ---------------------------------------------->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="dash_board.html" class="button"><i class='bx bx-home-alt'></i></a>
+                </div>
+                <div class="surch">
+                    <form class="search-container">
+                        <input type="text" id="search-bar" placeholder="What can I help you with today?">
+                    </form>
+                </div>
+                <ul >
+                    <li><a href="#" class="button"><i class='bx bx-plus' ></i></a></li>
+                    <li><a href="#" class="button"><i class='bx bx-info-circle' ></i></a></li>
+                    <li><a href="#" class="button"><i class='bx bx-bell' ></i></a></li>
+                    <img src="images/victo-hugo-e1566824882221.jpg" alt="profil" class="profil" onclick="toggleMenu()">
+                </ul>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="uper-info">
+                            <img src="images/victo-hugo-e1566824882221.jpg" alt="profil">
+                            <h2>Victor Hugo</h2>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bx-user'></i>
+                            <p>Edit Profile</p>
+                            <span></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bx-cog' ></i>
+                            <p>Settings & Privacy</p>
+                            <span></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bx-help-circle' ></i>
+                            <p>Help & Support</p>
+                            <span></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bx-log-in' ></i>
+                            <p>Logout</p>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                
+            </nav>
+        </header>
+        
+        <!-------------------------------- Sidbar ---------------------------------------------->
+        <div class="sidebar">
+            <div class="topsid">
+                <div class="logosid">
+                    <i class="bx bxl-codepen"></i>
+                    <span>CodeCommerce</span>
+                </div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="bx bxs-grid-alt"></i>
+                        <span class="nav-item">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bxs-shopping-bag"></i>
+                        <span class="nav-item">Products</span>
+                    </a>
+                    <span class="tooltip">Products</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-list-check"></i>
+                        <span class="nav-item">Categories</span>
+                    </a>
+                    <span class="tooltip">Categories</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bxs-food-menu"></i>
+                        <span class="nav-item">Orders</span>
+                    </a>
+                    <span class="tooltip">Orders</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-body"></i>
+                        <span class="nav-item">Customers</span>
+                    </a>
+                    <span class="tooltip">Customers</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-location-plus"></i>
+                        <span class="nav-item">Shipping</span>
+                    </a>
+                    <span class="tooltip">Shipping</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-cog"></i>
+                        <span class="nav-item">Settings</span>
+                    </a>
+                    <span class="tooltip">Settings</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="container">
+                <!-------------------------------- Menu DashBoard ---------------------------------------------->
+                <div class="menudashboard">
+
+                    <select name="listEquipe">
+                        <option value="equipe1">Equipe 1</option>
+                        <option value="equipe2">Equipe 2</option>
+                        <option value="equipe3">Equipe 3</option>
+                        <option value="equipe4">Equipe 4</option>
+                    </select>
+
+                    <p>ID de l'equipe</p>
+                    <button class="fav">Favorie</button>
+                    <div class="spacer-verti"></div>
+                    <button class="button">Acme, Inc.</button>
+                    <div class="spacer-horital"></div>
+                    <button class="imgprof">Image de profil 1</button>
+                    <button class="imgprof">Image de profil 2</button>
+                    <button class="imgprof">Image de profil 3</button>
+                    <button class="allimgprof">+ 10</button>
+                    <button class="button">Add</button>
+
+                </div>
+
+                <!-------------------------------- Main DashBoard ---------------------------------------------->
+                <div class="dashboard">
+                    <div class="left">
+                        <div class="projects">
+                            <h1>Projects</h1>
+                            <button class="menu">...</button>
+                            <div class="project1"></div>
+                            <div class="project2"></div>
+                            <div class="project3"></div>
+                            <button class="add">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="todo">
+                            <h1>To Do</h1>
+                            <button class="menu">...</button>
+                            <div class="task1"></div>
+                            <div class="task2"></div>
+                            <div class="task3"></div>
+                            <button class="add">+ Add</button>
+                        </div>
+                        <div class="tools">
+                            <h1>Tools</h1>
+                            <button class="menu">...</button>
+                            <button class="add">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="calendar">
+                            <h1>Calendar</h1>
+                            <button class="menu">...</button>
+                        </div>
+                        <div class="news">
+                            <h1>News</h1>
+                            <button class="menu">...</button>
+                            <div class="news1"></div>
+                            <div class="news2"></div>
+                            <div class="news3"></div>
+                            <button class="add">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+</body>
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+
+</script>
+</html>
